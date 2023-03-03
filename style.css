@@ -1,0 +1,91 @@
+html, body {
+/*   height: 100%; */
+/*   width: 100%; */
+  background-color: black;
+  color: white;
+  background-image: url("img/dice.jpg");
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+}
+header {
+  border-radius: 200px;
+  border: 5px solid #672f2d;
+  background-color: #672f2d;
+  width: 100%;
+  letter-spacing: 2px;
+  cursor: progress;
+}
+nav {
+	text-align: center;
+	padding: 15px; 
+  border-radius: 15px 50px;
+}
+nav a {
+	padding: 12px;
+  margin: 100px;
+	border-radius: 15px;
+	color: white;
+	text-decoration: none;
+}
+.navButton:hover {
+	background-color: #b51a00;
+}
+nav {
+  border: 100px;
+	background-color: #5c0700;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+#container, #diceContainer, #compVuser {
+  display: flex;
+  
+}
+#container, #diceContainer{
+  justify-content: center;
+}
+#gameArea, #compVuser, #balances, #compUser, #diceContainer {
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+  background-color: #5c0700;
+  box-shadow: 10px 10px black;
+}
+#balances, #compUser {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #672f2d;
+}
+#moneyContainer, #diceContainer {
+  font-size: xx-large;
+}
+#moneyContainer, #funds, #jackpot, #newContainer {
+  display: inline-flex;
+}
+#compUser, #diceContainer{
+  justify-content: space-around;
+}
+img {
+  width: 50%;
+  cursor: progress;
+}
+#compName, #userName {
+  padding: 15px;
+  cursor: progress;
+}
+#newImage, #newImage2 {
+  width: 50%;
+  height: 4%;
+  vertical-align: center;
+}
+#newContainer{
+  justify-content: space-around;
+}
+#strike{
+  text-decoration: line-through;
+}
+#quoter{
+  quotes: "«" "»";
+}

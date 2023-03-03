@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dice Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="playFunds();compAndBet()">
+  <br>
+  <header>
+    <h1>Play</h1>
+  </header>
+
+  <nav>
+    <div id="navigation">
+      <a href="index.html" class="navButton"> Start</a> &nbsp;
+      <a href="balance.html" class="navButton"> Balance</a> &nbsp;
+      <a href="play.html" class="navButton"> Play</a> &nbsp;
+    </div>
+  </nav>
+  <br>
+  <div id="container">
+    <div id="gameArea">
+      Press play to start another game!
+      <br>
+      <button onclick="playButton()" id="playButton" type="button" class="btn btn-secondary">Play</button>&nbsp;
+    </div>
+  </div>
+  <br>
+  <div id="container">
+
+    <div id="compVuser">
+      <div id="compUser">
+        <img src="img/computer.png" alt="Computer">
+        <br><br>
+        <div id="compName">
+          Computer
+        </div>
+        <br><br>
+        <button onclick="compButton()" id="compButton" type="button" class="btn btn-secondary">Activate</button>
+        <br>
+        <div id="diceContainer">
+          <div id="compDice1">0</div>
+          <div id="compDice2">0</div>
+        </div>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div id="compUser">
+        <img src="img/user.png" alt="User">
+        <br><br>
+        <div id="userName">
+          User
+        </div>
+        <br><br>
+        <button onclick="rollButton();imageLoad()" id="rollButton" type="button" class="btn btn-secondary" disabled>Roll</button>
+        <br>
+        <div id="diceContainer">
+          <div id="userDice1">0</div>
+          <div id="userDice2">0</div>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <br>
+  <div id="container">
+    
+    
+    <div id="gameArea">
+      Your funds: $<div id="funds">0</div>.00
+      <br>
+      Jackpot: $<div id="jackpot">0</div>.00
+      <br>
+      <div id="newContainer">
+        Computer added $<div id="compFunds">0</div>.00
+        <br>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
